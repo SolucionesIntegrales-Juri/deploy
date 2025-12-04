@@ -7,7 +7,7 @@ services:
     build:
       context: ../eureka-server
       dockerfile: Dockerfile
-    image: eureka-server:latest
+    image: acund/eureka-server:1.0
     env_file:
       - .env
     ports:
@@ -24,7 +24,7 @@ services:
     build:
       context: ../api-gateway
       dockerfile: Dockerfile
-    image: api-gateway:latest
+    image: acund/api-gateway:1.0
     env_file:
       - .env
     ports:
@@ -39,7 +39,7 @@ services:
     build:
       context: ../msvc-oauth
       dockerfile: Dockerfile
-    image: msvc-oauth:latest
+    image: acund/msvc-oauth:1.0
     env_file:
       - .env
     ports:
@@ -54,7 +54,7 @@ services:
     build:
       context: ../msvc-users
       dockerfile: Dockerfile
-    image: msvc-users:latest
+    image: acund/msvc-users:1.0
     env_file:
       - .env
     ports:
@@ -69,7 +69,7 @@ services:
     build:
       context: ../msvc-clientes
       dockerfile: Dockerfile
-    image: msvc-clientes:latest
+    image: acund/msvc-clientes:1.0
     env_file:
       - .env
     ports:
@@ -84,7 +84,7 @@ services:
     build:
       context: ../msvc-vehiculos
       dockerfile: Dockerfile
-    image: msvc-vehiculos:latest
+    image: acund/msvc-vehiculos:1.0
     env_file:
       - .env
     ports:
@@ -99,7 +99,7 @@ services:
     build:
       context: ../msvc-contratos
       dockerfile: Dockerfile
-    image: msvc-contratos:latest
+    image: acund/msvc-contratos:1.0
     env_file:
       - .env
     ports:
@@ -114,7 +114,7 @@ services:
     build:
       context: ../msvc-reportes
       dockerfile: Dockerfile
-    image: msvc-reportes:latest
+    image: acund/msvc-reportes:1.0
     env_file:
       - .env
     ports:
